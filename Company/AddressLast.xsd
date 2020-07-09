@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified"
+    vc:minVersion="1.0" vc:maxVersion="1.1" targetNamespace="http://my-company.com/namespace"
+    xmlns="http://my-company.com/namespace">
+
+    <xs:element name="Company">
+        <xs:annotation>
+            <xs:documentation>Root element</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Address" type="Address_type"/>
+                <xs:element maxOccurs="unbounded" minOccurs="1" ref="Person"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="US_Adress">
+        <xs:complexContent>
+            <xs:extension base="Address_type">
+                <xs:sequence>
+                    <xs:element name="Zip" type="xs:positiveInteger"/>
+                    <xs:element name="State" type="US-State"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Address_type">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Street" type="xs:string"/>
+            <xs:element name="City" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="US-State">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:complexType name="UK-Address">
+        <xs:complexContent>
+            <xs:extension base="Address_type">
+                <xs:sequence>
+                    <xs:element name="Postcode" type="xs:string"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="Person">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="First" type="xs:string"/>
+                <xs:element name="Last" type="xs:string"/>
+                <xs:element minOccurs="0" name="Title" type="xs:string"/>
+                <xs:element name="PhoneExt">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:maxInclusive value="99"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Email" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="Programmer" type="xs:boolean" use="required"/>
+            <xs:attribute name="Manager" type="xs:boolean" use="required"/>
+            <xs:attribute name="Degree">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="BA"/>
+                        <xs:enumeration value="PA"/>
+                        <xs:enumeration value="Ph.D"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,46 @@
+
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml-stylesheet href="styles/students.css" ?>
+
+<!ELEMENT businness_letter [
+<!ELEMENT header1>
+<!ELEMENT sender(name,andress,phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT andress (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT receiver(name,andress,phone,company)>
+<!ELEMENT company (#PCDATA)>
+<!ELEMENT letter(letter_title, letter_body)>
+<!ELEMENT letter_title(#PCDATA)>
+<!ELEMENT letter_body(#PCDATA)>
+]>
+
+<businness_letter>
+	<header1> 
+		<sender> 
+			<name>Bob Johson</name>
+			<andress> 123 Market </andress>
+			<phone> 123-134-234 </phone>
+		</sender>
+	</header1>
+
+	<header2>
+		<receiver> 
+			<name>Ms Pat Smith </name>
+			<receiver_company> Human Resouces Dept. </receiver_company>
+			<andress> ACME Health Club </andress>
+			<phone> 333-395-2434 </phone>
+		</receiver>
+	</header2>
+
+	<letter>
+		<letter_title>
+			Dear Ms Smith,
+		</letter_title>
+
+		<letter_body>
+			Thank you for taking the time speak with me about yout Personal Trainer position yesterday. 
+			I look forward to speaking with you.
+		</letter_body>
+	</letter>
+</business_letter>

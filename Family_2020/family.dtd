@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Purpose : create the document type declaration for the family -->
+<!-- Developed by Douglas Vinicio -->
+<!-- Script Date : May 26, 2020 -->
+
+<!-- Declare the family root element -->
+<!ELEMENT family (mom, dad, elder_child, youngest_child,troubles?)>
+
+<!-- Declaring each element -->
+<!ELEMENT mom (#PCDATA)>
+<!ELEMENT dad (#PCDATA)>
+<!ELEMENT elder_child (#PCDATA)>
+<!ELEMENT youngest_child (#PCDATA)>
+
+<!-- Declare troubles elements -->
+<!ELEMENT troubles (trouble, more_trouble)>
+<!ELEMENT trouble (#PCDATA)>
+<!-- More trouble -->
+<!ELEMENT more_trouble ((dog | cat)?)>
+<!ELEMENT dog (#PCDATA)>
+<!ELEMENT cat (#PCDATA)>
+
+
+
+
+
+
+

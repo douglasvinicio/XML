@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Using asterix operator -->
+<!-- Developed by Douglas Vinicio -->
+<!-- Script Date : May 26,2020 -->
+
+<!ELEMENT new_model (#PCDATA | Chevy | Ford | Nissan | VW )*>
+<!ELEMENT Chevy (#PCDATA)>
+<!ELEMENT Ford (#PCDATA)>
+<!ELEMENT Nissan (#PCDATA)>
+<!ELEMENT VW (#PCDATA)>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Declaring authors as the root element with one or more occurencies. -->
+<!ELEMENT authors (author)+>
+<!-- author declared as c -->
+<!ELEMENT author (authorName+, phone*, books)>
+<!ATTLIST author authorID CDATA #REQUIRED>
+
+<!-- authorName Element / May have more than one occurenece / middleName is optional * -->
+<!ELEMENT authorName (firstName, middleName?, lastName)+>
+<!-- authorname attributes right bellow the element declaration-->
+<!ATTLIST authorName title (Mr. | Mrs. | Ms.) #IMPLIED >
+<!-- Defining sub-elements of authorName -->
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT middleName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+
+<!-- Phone element declared as optional -->
+<!ELEMENT phone (#PCDATA)>
+
+<!-- Books Element declared with at least one book element occurence  -->
+<!ELEMENT books (book)+>
+<!ELEMENT book (book_name, publisher)+>
+<!-- Attributes declared for the book element -->
+<!ATTLIST book
+bookID CDATA #REQUIRED
+version CDATA "1.1">
+<!-- Defining book child elements as PCDATA -->
+<!ELEMENT book_name (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+

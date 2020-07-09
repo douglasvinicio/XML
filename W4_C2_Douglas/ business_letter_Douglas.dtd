@@ -1,0 +1,12 @@
+<!ELEMENT businness_letter [
+<!ELEMENT header1>
+<!ELEMENT sender(name,andress,phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT andress (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT receiver(name,andress,phone,company)>
+<!ELEMENT company (#PCDATA)>
+<!ELEMENT letter(letter_title, letter_body)>
+<!ELEMENT letter_title(#PCDATA)>
+<!ELEMENT letter_body(#PCDATA)>
+]>

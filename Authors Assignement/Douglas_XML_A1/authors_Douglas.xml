@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE authors SYSTEM "authors_Douglas.dtd">
+<authors>
+    <author authorID ="A001"> 
+        <authorName title="Mr.">
+            <firstName>Joe </firstName>
+            <lastName>Fawcett </lastName> 
+        </authorName>
+        <authorName title="Mr.">
+            <firstName> Danny</firstName> 
+            <lastName> Ayers</lastName>
+        </authorName> 
+        <authorName title="Mr.">
+            <firstName> Liam</firstName>    
+            <middleName>R. E.</middleName > 
+            <lastName> Quin</lastName>
+        </authorName>
+        <phone>212-443-8875</phone>
+        <books>
+            <book bookID="B0001" version="1.1">
+                <book_name>Beginning XML, 5th Edition </book_name>
+                <publisher>John Wiley &amp; Sons, Inc. </publisher> <!-- &amp; XML special character  --> 
+            </book>
+            <book bookID="B0002" version="1.2">
+                <book_name>Java Programming for professionals</book_name> 
+                <publisher> Course Technology </publisher>
+            </book>
+        </books>
+    </author>
+    <author authorID="A002"> 
+        <authorName title="Ms.">
+            <firstName>Samantha</firstName>
+            <lastName>Tracey</lastName>
+        </authorName>
+        <books>
+            <book bookID="B0028">
+                <book_name>XML and DTD</book_name>
+                <publisher> Course Technology.</publisher> </book>
+            <book bookID="B0029" version="1.1"> 
+                <book_name>XML and Schemas</book_name> 
+                <publisher> Course Technology </publisher>
+            </book>
+        </books>
+    </author>
+</authors>

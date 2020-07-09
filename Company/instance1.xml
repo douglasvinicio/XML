@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<na:Company xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+ xmlns:na="http://my-company.com/namespace"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://my-company.com/namespace file:/Users/douglasvinicio/Desktop/XML_Projects%20/Company/AddressLast.xsd">
+    <na:Address>
+        <na:Name>Name0</na:Name>
+        <na:Street>Street0</na:Street>
+        <na:City>City0</na:City>
+    </na:Address>
+    <na:Person Programmer="false" Manager="false">
+        <na:First>First0</na:First>
+        <na:Last>Last0</na:Last>
+        <na:PhoneExt>0</na:PhoneExt>
+        <na:Email>Email0</na:Email>
+    </na:Person>
+    <na:Person Programmer="false" Manager="false">
+        <na:First>First1</na:First>
+        <na:Last>Last1</na:Last>
+        <na:PhoneExt>0</na:PhoneExt>
+        <na:Email>Email1</na:Email>
+    </na:Person>
+</na:Company>

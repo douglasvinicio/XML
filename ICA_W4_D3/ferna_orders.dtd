@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Definig orders elements -->
+<!ELEMENT orders (order)*>
+<!-- Order element contains Id, Customer data, product specification and order status -->
+<!ELEMENT order (order_id, value, customer, products, order_type , status, comments)>
+<!-- Order Identification, each order has its own number -->
+<!ELEMENT order_id (#PCDATA)>
+<!-- Value element stands for the amount in $ paid for the client -->
+<!ELEMENT value (#PCDATA)>
+<!-- Defining customer elements -->
+<!-- Email / Phone declared as optional  -->
+<!-- <!ELEMENT  customer (customer_id, name, phone+, adress, email?)> -->
+<!ELEMENT customer (#PCDATA | phone)*>
+<!ATTLIST customer 
+customer_id CDATA #REQUIRED
+first_name CDATA #REQUIRED
+last_name CDATA #REQUIRED
+adress CDATA #IMPLIED
+email CDATA #IMPLIED>
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST phone type (mobile | work | home) #REQUIRED>
+<!-- Definig products elements -->
+<!-- "Device" and "Music" elements using (*) means that the client can order zero or more of this product -->
+<!-- "Subscription" are unique per clients and can be ordered only once / (?) means zero or one of the element-->
+<!ELEMENT products (device*, music*, subscription?)>
+<!ELEMENT device (#PCDATA)>
+<!ATTLIST device 
+model CDATA "Serna Inc"
+quantity CDATA #IMPLIED>
+<!ELEMENT music (#PCDATA)>
+<!ELEMENT subscription (#PCDATA)>
+<!ATTLIST subscription months (1 | 3 | 6 | 12) #REQUIRED
+quantity CDATA #IMPLIED>
+
+<!-- Type of the order -->
+<!ELEMENT order_type EMPTY>
+<!ATTLIST order_type
+cancelled (yes | no) #IMPLIED
+refund (yes | no) #IMPLIED
+new_order (yes | no ) #REQUIRED>
+
+<!-- Status element -->
+<!ELEMENT status EMPTY>
+<!ATTLIST status 
+approved (yes | no) #REQUIRED
+updated (yes | no ) #REQUIRED
+>
+<!-- Give the CSR Representative to add details of the order -->
+<!ELEMENT comments (#PCDATA)>
+
+
+
+

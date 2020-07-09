@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Processing Instruction calling a CSS StyleSheet -->
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<!DOCTYPE orders SYSTEM "ferna_orders.dtd">
+
+<orders>
+    <order>
+      <order_id>001</order_id>
+      <value>$300</value>
+          <customer 
+          customer_id="01"
+          first_name="John"
+          last_name="Doe"
+          adress="123 Street, USA"
+          email="johndoe@email.com"
+          >
+          <phone type="home">123-456-7890</phone>
+        </customer>
+          <products>
+              <device model="Serna Inc" quantity=""/>              
+              <music></music>
+              <subscription months="3" quantity=""/>
+          </products>
+          <order_type new_order="yes"/>
+          <status approved="yes" updated="no"/>
+          <comments>
+            Here you put some comment about the order in case of need.
+          </comments>
+    </order>
+</orders>

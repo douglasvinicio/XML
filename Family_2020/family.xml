@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE family SYSTEM "family.dtd">
+<family>
+    <mom>Eleanor</mom>
+    <dad>Marc</dad>
+    <elder_child>Steven</elder_child>
+    <youngest_child>John</youngest_child>
+    <troubles>
+        <trouble></trouble>
+        <more_trouble>
+            <cat>Kitty</cat>
+        </more_trouble>
+    </troubles>
+</family>

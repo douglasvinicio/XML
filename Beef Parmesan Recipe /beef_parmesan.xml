@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!DOCTYPE recipe SYSTEM "recipe.dtd">
+<!-- XML Document for Beef Parmesan Recipe -->
+<!-- Script Date: May 27, 2020 -->
+<!-- Developed by: Douglas Vinicio -->
+<recipe>
+    <recipe_name>Beef Parmesan with Garlic Angel Hair Pasta</recipe_name>
+    <title1>Ingredients</title1>
+    <ingredients>
+        <item quantity="1 1/2" unity="pounds" name="pounds beef cube steak"/>
+        <item quantity="1" name="onion, sliced into thin rings"/>
+        <item quantity="1" name="green bell pepper, sliced in rings"/>
+        <item quantity="1" unity="cup" name="Italian seasoned bread crumbs"/>
+        <item quantity="1/2" unity="cup" name="grated Parmesan cheese"/>
+        <item quantity="2" name="tablespoons olive oil"/>
+        <item quantity="1 (16 ounce)" name="jar spaghetti sauce"/>
+        <item quantity="1/2" unity="cup" name="shredded mozzarella cheese"/>
+        <item quantity="12 ounces" name="ounces angel hair pasta"/>
+        <item quantity="2" unity="teaspoons" name="minced garlic"></item>
+        <item quantity="1/4" unity="cup" name="butter"/>
+    </ingredients> 
+    <title2>Description</title2>
+    <directions>
+        <step>1- Preheat oven to 350 degrees F (175 degrees C).</step>
+        <step>2- Cut cube steak into serving size pieces. Coat meat with the bread crumbs
+            and parmesan cheese.</step>
+        <step>3- Heat olive oil in a large frying pan, and saute 1
+            teaspoon of the garlic for 3 minutes. Quick fry (brown quickly on both sides)
+            meat.</step>
+        <step>4- Place meat in a casserole baking dish, slightly overlapping edges.
+            Place onion rings and peppers on top of meat, and pour marinara sauce
+            over all.</step>
+        <step>5- Bake at 350 degrees F (175 degrees C) for 30 to 45 minutes, depending on
+            the thickness of the meat.</step>
+        <step>6- Sprinkle mozzarella over meat and leave in the oven till bubbly.</step>
+        <step>7- Boil pasta al dente. Drain, and toss in butter and 1 teaspoon garlic. For a
+            stronger garlic taste, season with garlic powder. Top with grated parmesan
+            and parsley for color. Serve meat and sauce atop a mound of pasta! </step>
+        <step>HINT:make the meat ahead of time, and refrigerate over night, the acid in the
+            tomato sauce will tenderize the meat even more. If you do this, save the
+            mozzarella till the last minute.</step>
+    </directions>
+    <nutrition>
+        <calories>Calories 1167</calories>
+        <protein>Protein 71g</protein>
+        <fat>Fat 52g</fat>
+        <carbohydrates>Carbohydrates 101g</carbohydrates>
+    </nutrition>
+</recipe>
